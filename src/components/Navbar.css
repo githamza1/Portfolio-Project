@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar .menu a:hover {
+    color: #00bcd4; /* Change this hover color if you want */
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .navbar .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    .navbar .menu.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+      color: white;
+    }
+  }
+  
